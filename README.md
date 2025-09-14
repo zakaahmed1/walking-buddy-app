@@ -1,50 +1,104 @@
-# Welcome to your Expo app 👋
+🥾 Walking Buddy App (MVP)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile-first React Native application that helps people in the UK safely connect with local walking partners. This MVP aims to improve upon existing platforms like WalkBuddy by focusing on simplicity, trust, and usability.
 
-## Get started
+📱 Features (MVP Scope)
+1. User Authentication
 
-1. Install dependencies
+Sign up and log in using email/password via Firebase Auth
 
-   ```bash
-   npm install
-   ```
+User profiles stored in Firestore (name, email, UID, createdAt)
 
-2. Start the app
+2. Profile Setup
 
-   ```bash
-   npx expo start
-   ```
+Enter name and email during signup
 
-In the output, you'll find options to open the app in a
+Profile stored in Firestore for future buddy matching
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+3. Walk Buddy Matching (Coming Soon)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Filter walkers by distance, pace, and availability
 
-## Get a fresh project
+Send and receive walk requests
 
-When you're ready, run:
+Accept/decline matches
 
-```bash
-npm run reset-project
-```
+4. Messaging (Coming Soon)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Simple one-to-one chat between matched users
 
-## Learn more
+Safety prompt before chat starts
 
-To learn more about developing your project with Expo, look at the following resources:
+5. Safety & Simplicity
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Email verification required
 
-## Join the community
+Ability to report/block users (future feature)
 
-Join our community of developers creating universal apps.
+🛠 Tech Stack
+Layer	Technology
+Frontend	React Native (Expo)
+Authentication	Firebase Authentication
+Database	Firebase Firestore
+State Management	React Hooks
+Navigation	React Navigation
+🗂️ Folder Structure
+walking-buddy-app/
+├── app/                # Navigation and screen registration
+├── components/         # Reusable UI elements
+├── constants/          # Static config (colors, styles, etc.)
+├── hooks/              # Custom React hooks (optional)
+├── assets/             # Images, icons
+├── scripts/            # Optional setup scripts
+├── src/
+│   ├── screens/        # Signup, Login, Home, etc.
+│   └── services/       # Firebase config and logic
+├── app.json
+├── package.json
+└── README.md
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+🚀 Getting Started
+1. Clone the repo:
+git clone https://github.com/YOUR_USERNAME/walking-buddy-app.git
+cd walking-buddy-app
+
+2. Install dependencies:
+npm install
+
+3. Start the Expo server:
+npm start
+
+
+Then scan the QR code with Expo Go on your mobile device.
+
+🔐 Firebase Setup
+
+Make sure to:
+
+Create a Firebase project
+
+Enable Email/Password Auth
+
+Enable Cloud Firestore (test mode for development)
+
+Add your Firebase config to:
+src/services/firebaseConfig.js
+
+📌 Roadmap (Post-MVP)
+
+ Add walk buddy matching algorithm
+
+ Implement messaging via Firestore
+
+ Add location-based filters
+
+ Profile photos & profile editing
+
+ Admin moderation tools
+
+ Push notifications
+
+🧑‍💻 Author
+
+Zaka Ahmed
+Walking Buddy App – MVP Builder 💪
