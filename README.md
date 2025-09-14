@@ -35,28 +35,6 @@ Email verification required
 
 Ability to report/block users (future feature)
 
-🛠 Tech Stack
-Layer	Technology
-Frontend	React Native (Expo)
-Authentication	Firebase Authentication
-Database	Firebase Firestore
-State Management	React Hooks
-Navigation	React Navigation
-🗂️ Folder Structure
-walking-buddy-app/
-├── app/                # Navigation and screen registration
-├── components/         # Reusable UI elements
-├── constants/          # Static config (colors, styles, etc.)
-├── hooks/              # Custom React hooks (optional)
-├── assets/             # Images, icons
-├── scripts/            # Optional setup scripts
-├── src/
-│   ├── screens/        # Signup, Login, Home, etc.
-│   └── services/       # Firebase config and logic
-├── app.json
-├── package.json
-└── README.md
-
 🚀 Getting Started
 1. Clone the repo:
 git clone https://github.com/YOUR_USERNAME/walking-buddy-app.git
