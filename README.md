@@ -1,8 +1,8 @@
-🥾 Walking Buddy App (MVP)
+Walking Buddy App
 
 A mobile-first React Native application that helps people in the UK safely connect with local walking partners. This MVP aims to improve upon existing platforms like WalkBuddy by focusing on simplicity, trust, and usability.
 
-📱 Features (MVP Scope)
+Features:
 1. User Authentication
 
 Sign up and log in using email/password via Firebase Auth
@@ -35,7 +35,7 @@ Email verification required
 
 Ability to report/block users (future feature)
 
-🚀 Getting Started
+Getting Started:
 1. Clone the repo:
 git clone https://github.com/YOUR_USERNAME/walking-buddy-app.git
 cd walking-buddy-app
@@ -49,7 +49,7 @@ npm start
 
 Then scan the QR code with Expo Go on your mobile device.
 
-🔐 Firebase Setup
+Firebase Setup
 
 Make sure to:
 
@@ -62,7 +62,7 @@ Enable Cloud Firestore (test mode for development)
 Add your Firebase config to:
 src/services/firebaseConfig.js
 
-📌 Roadmap (Post-MVP)
+Roadmap (Post-MVP):
 
  Add walk buddy matching algorithm
 
@@ -75,8 +75,3 @@ src/services/firebaseConfig.js
  Admin moderation tools
 
  Push notifications
-
-🧑‍💻 Author
-
-Zaka Ahmed
-Walking Buddy App – MVP Builder 💪
