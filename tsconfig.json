@@ -2,10 +2,14 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"],                     // 👈 root alias used by "@/components/..."
+      "@components/*": ["app/components/*"],
+      "@screens/*": ["app/screens/*"],
+      "@services/*": ["src/services/*"],
+      "@constants/*": ["constants/*"],    // optional (matches your tree)
+      "@hooks/*": ["hooks/*"]             // optional
     }
   },
   "include": [
