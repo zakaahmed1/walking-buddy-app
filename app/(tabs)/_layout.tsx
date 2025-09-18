@@ -2,17 +2,13 @@
 import { Tabs } from "expo-router";
 import React from "react";
 import { IconSymbol } from "../../components/ui/icon-symbol";
-import { Colors } from "../../constants/theme";
-import { useColorScheme } from "../../hooks/use-color-scheme";
 
 export default function TabsLayout() {
-  const colorScheme = useColorScheme();
-
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
         headerShown: false,
+        tabBarActiveTintColor: "#0077cc",
       }}
     >
       <Tabs.Screen
@@ -29,7 +25,16 @@ export default function TabsLayout() {
         options={{
           title: "Explore",
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="paperplane.fill" color={color} />
+            <IconSymbol size={28} name="map.fill" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "Profile",
+          tabBarIcon: ({ color }) => (
+            <IconSymbol size={28} name="person.fill" color={color} />
           ),
         }}
       />
